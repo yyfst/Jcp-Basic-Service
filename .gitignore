@@ -1,2 +1,3 @@
 .idea/
-Jcp-Basic-Service.iml
+*.iml
+target/
