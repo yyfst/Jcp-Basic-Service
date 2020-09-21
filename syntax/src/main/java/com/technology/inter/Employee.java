@@ -1,5 +1,8 @@
 package com.technology.inter;
 
+/**
+ * 实现了Comparable接口，通过实现compareTo方法完成Employee对象的排序
+ */
 public class Employee implements Comparable<Employee> {
     private String name;
     private double salary;

@@ -30,7 +30,7 @@ public interface Student {
      * 接口中可以有默认方法
      */
     default public void defaultMethod() {
-        System.out.println("this is a default method");
+        System.out.println("this is a default method in student");
         staticMethod();
         privateMethod();
     }
