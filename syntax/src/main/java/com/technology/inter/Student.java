@@ -8,14 +8,37 @@ public interface Student {
     /**
      * 学生年龄.
      */
-    int AGE = 10;
+    static final int AGE = 10;
     /**
      * 学生姓名.
      */
-    String NAME = "cot";
+    static final String NAME = "cot";
+
     /**
-     *
      * @param age 年龄
      */
-    void setAge(int age);
+    public void setAge(int age);
+
+    /**
+     * 接口中可以有静态方法
+     */
+    public static void staticMethod() {
+        System.out.println("this is a static method");
+    }
+
+    /**
+     * 接口中可以有默认方法
+     */
+    default public void defaultMethod() {
+        System.out.println("this is a default method");
+        staticMethod();
+        privateMethod();
+    }
+
+    /**
+     * 接口中可以有私有方法，但是只能在接口中被其他方法调用
+     */
+    private void privateMethod(){
+        System.out.println("this is a private method");
+    }
 }
