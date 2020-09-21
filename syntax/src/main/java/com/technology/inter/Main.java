@@ -15,10 +15,10 @@ public class Main {
         list.add(new Employee("Sune", 1000.0, 26));
         list.add(new Employee("Hoe", 3200.0, 27));
 
-        //集合排序方法
+        //集合排序方法，由于在Employee中复写了compareTo，因此可以对list进行排序
         Collections.sort(list);
 
-        //遍历集合
+        //遍历集合，var是自动类型推断
         for (var data : list) {
             System.out.println(data.getName() + " " + data.getAge() + " " + data.getSalary());
         }
