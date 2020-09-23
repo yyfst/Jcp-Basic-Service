@@ -1,4 +1,4 @@
-package com.technology.inter;
+package com.technology.interface_java;
 
 /**
  * 同时实现了Student和Teacher

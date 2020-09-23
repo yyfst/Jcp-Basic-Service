@@ -1,14 +1,14 @@
-package com.technology.inter;
+package com.technology.interface_java;
 
 /**
  * 实现了Comparable接口，通过实现compareTo方法完成Employee对象的排序
  */
-public class Employee implements Comparable<Employee> {
+public class ComparableImp implements Comparable<ComparableImp> {
     private String name;
     private double salary;
     private int age;
 
-    public Employee(String name, double salary, int age) {
+    public ComparableImp(String name, double salary, int age) {
         this.name = name;
         this.salary = salary;
         this.age = age;
@@ -43,7 +43,7 @@ public class Employee implements Comparable<Employee> {
      * 浮点类使用Double.compare来比较，而不是使用this.salary-o.getSalary()
      */
     @Override
-    public int compareTo(Employee o) {
+    public int compareTo(ComparableImp o) {
         return Double.compare(this.salary,o.getSalary());
     }
 }

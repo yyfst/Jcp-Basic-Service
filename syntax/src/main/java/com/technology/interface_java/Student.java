@@ -1,4 +1,4 @@
-package com.technology.inter;
+package com.technology.interface_java;
 
 /**
  * 1.接口中的字段默认是static final，可以省略不写.
