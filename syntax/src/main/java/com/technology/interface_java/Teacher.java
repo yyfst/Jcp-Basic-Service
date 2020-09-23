@@ -1,4 +1,4 @@
-package com.technology.inter;
+package com.technology.interface_java;
 
 /**
  * 该类主要用于演示接口中的方法发生冲突时的解决方式
