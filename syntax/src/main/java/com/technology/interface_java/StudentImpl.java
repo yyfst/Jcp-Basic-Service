@@ -4,7 +4,7 @@ package com.technology.interface_java;
  * 同时实现了Student和Teacher
  * 这两个接口有两个方法冲突了
  */
-public class StudentImpl implements Student, Teacher {
+public class StudentImpl implements Student, Teacher, Cloneable {
     private int age;
 
     /**
@@ -23,6 +23,11 @@ public class StudentImpl implements Student, Teacher {
     @Override
     public void defaultMethod() {
         System.out.println("Override method");
+    }
+
+    @Override
+    protected StudentImpl clone() throws CloneNotSupportedException {
+        return (StudentImpl) super.clone();
     }
 
     public int getAge() {
