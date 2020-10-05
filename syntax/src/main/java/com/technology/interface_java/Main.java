@@ -2,6 +2,7 @@ package com.technology.interface_java;
 
 import java.time.Clock;
 import java.util.*;
+import javax.swing.Timer;
 
 public class Main {
     public static void main(String[] args) {
@@ -39,6 +40,8 @@ public class Main {
         stringCopy();
 
         cloneTest();
+
+        timer();
 
     }
 
@@ -94,6 +97,16 @@ public class Main {
         //这两个student没有经过深拷贝，共享了一个对象内存，所以是同一个对象
         System.out.println(deepCopy1.getStudent() == deepCopy2.getStudent());
 
+    }
+
+    private static void timer() {
+        ActionListenerImpl listener = new ActionListenerImpl();
+        Timer timer = new Timer(1000,listener);
+        timer.start();
+        //让程序持续运行，从而看到定时器的作用
+        while (true){
+            ;
+        }
     }
 
 }
