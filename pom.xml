@@ -8,6 +8,13 @@
     <artifactId>Jcp-Basic-Service</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <dependencies>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.6.6</version>
+        </dependency>
+    </dependencies>
     <modules>
         <module>syntax</module>
     </modules>
