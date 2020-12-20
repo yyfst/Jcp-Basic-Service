@@ -1,4 +1,4 @@
-package com.technology.interface_java;
+package com.technology.interface_basic.implement;
 
 /**
  * 实现了Comparable接口，通过实现compareTo方法完成Employee对象的排序

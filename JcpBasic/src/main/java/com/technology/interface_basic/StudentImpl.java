@@ -1,4 +1,7 @@
-package com.technology.interface_java;
+package com.technology.interface_basic;
+
+import com.technology.interface_basic.basciinterface.Student;
+import com.technology.interface_basic.basciinterface.Teacher;
 
 /**
  * 同时实现了Student和Teacher

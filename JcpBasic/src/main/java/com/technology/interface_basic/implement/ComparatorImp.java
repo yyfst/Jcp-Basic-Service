@@ -1,4 +1,4 @@
-package com.technology.interface_java;
+package com.technology.interface_basic.implement;
 
 import java.util.Comparator;
 
