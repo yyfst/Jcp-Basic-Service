@@ -1,7 +1,5 @@
 package com.technology.interface_basic.implement;
 
-import com.technology.interface_basic.StudentImpl;
-
 //Cloneable其实是个空接口，没有任何方法，实现该接口的目的是为了能够使用instanceof
 public class CloneableImp implements Cloneable {
     private int id;

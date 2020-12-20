@@ -1,4 +1,4 @@
-package com.technology.interface_basic;
+package com.technology.interface_basic.implement;
 
 import com.technology.interface_basic.basciinterface.Student;
 import com.technology.interface_basic.basciinterface.Teacher;
@@ -29,7 +29,7 @@ public class StudentImpl implements Student, Teacher, Cloneable {
     }
 
     @Override
-    protected StudentImpl clone() throws CloneNotSupportedException {
+    public StudentImpl clone() throws CloneNotSupportedException {
         return (StudentImpl) super.clone();
     }
 

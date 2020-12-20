@@ -1,9 +1,9 @@
-package com.technology.interface_basic.implement;
+package com.technology;
 
 import java.util.*;
 import javax.swing.Timer;
 
-import com.technology.interface_basic.*;
+import com.technology.interface_basic.implement.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
